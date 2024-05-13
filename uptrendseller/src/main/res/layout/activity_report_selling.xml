@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".report_selling">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        app:cardBackgroundColor="#6BE7F6"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/closeBtnReport"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:drawableStart="@drawable/back11_vector"
+                android:paddingStart="7dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="Reports"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_44sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/daily_Income_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  Daily Income Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/columan_vector"
+                android:backgroundTint="@color/black" />
+
+
+
+            <TextView
+                android:id="@+id/weekly_Income_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  Weekly Income Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/columan_vector"
+                android:backgroundTint="@color/black" />
+
+
+
+            <TextView
+                android:id="@+id/monthly_Income_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  Monthly Income Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/columan_vector"
+                android:backgroundTint="@color/black" />
+
+
+            <TextView
+                android:id="@+id/monthly_product_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  Monthly Product Selling Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/columan_vector"
+                android:backgroundTint="@color/black" />
+
+
+            <TextView
+                android:id="@+id/high_demand_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  High Demand Selling Product Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/columan_vector"
+                android:backgroundTint="@color/black" />
+
+
+            <TextView
+                android:id="@+id/cancel_order_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  Daily Cancel Order Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/columan_vector"
+                android:backgroundTint="@color/black" />
+
+
+            <TextView
+                android:id="@+id/return_order_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="●  Daily Return Order Report"
+                android:textColor="#038ECD"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/yeallw_top">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/fire"
+            app:lottie_loop="true" />
+
+        <ImageView
+            android:layout_width="@dimen/_76sdp"
+            android:layout_height="@dimen/_76sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:src="@drawable/fire" />
+
+        <TextView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_117sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:text="Up Trend"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_26ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_90sdp"
+        tools:context=".signUp_and_logIn_page">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/dm_serif_display"
+                android:text="@string/welcome"
+                android:textSize="@dimen/_40ssp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    app:cardCornerRadius="@dimen/_15sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="40dp"
+                                android:layout_height="40dp">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btn_click1"
+                                    android:layout_width="@dimen/_14sdp"
+                                    android:layout_height="@dimen/_14sdp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/circle_background"
+                                    android:backgroundTint="@color/effect"
+                                    android:textColor="@color/black" />
+
+
+                                <TextView
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/circle_background" />
+
+
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/gelasio"
+                                android:text="@string/createAc"
+                                android:textSize="@dimen/_16ssp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/gelasio"
+                                android:text="@string/newAcm"
+                                android:textSize="@dimen/_15ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_hide_show_create_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cardview_effect"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/name_create_account"
+                                android:layout_width="@dimen/_240sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:background="@drawable/edittext_touch_effect"
+                                android:drawableStart="@drawable/person_vector_effect"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:hint="@string/firstLastName"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_9sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="45dp"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:gravity="center"
+                                    android:text="+91"
+                                    android:textAlignment="center"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/mobileno_create_account"
+                                    android:layout_width="@dimen/_190sdp"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="7dp"
+                                    android:background="@drawable/edittext_touch_effect"
+                                    android:drawableStart="@drawable/phone_vector_effect"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:hint="@string/mobileNo"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="@dimen/_8sdp"
+                                    android:textSize="18sp" />
+
+
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:id="@+id/email_create_account"
+                                android:layout_width="@dimen/_240sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:layout_marginTop="@dimen/_16sdp"
+                                android:background="@drawable/edittext_touch_effect"
+                                android:drawableStart="@drawable/email_vector_effect"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:fontFamily="@font/gelasio"
+                                android:hint="@string/email"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textSize="18sp" />
+
+
+                            <EditText
+                                android:id="@+id/password_create_account"
+                                android:layout_width="@dimen/_240sdp"
+                                android:layout_height="@dimen/_45sdp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:background="@drawable/edittext_touch_effect"
+                                android:drawableStart="@drawable/lock_vector_effect"
+                                android:drawablePadding="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:hint="@string/password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textSize="18sp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="13dp"
+                                android:fontFamily="@font/gelasio"
+                                android:text="@string/passwordMsg"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <CheckBox
+                                android:id="@+id/checkbox_create_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginRight="70dp"
+                                android:fontFamily="@font/gelasio"
+                                android:text="@string/showPass"
+                                android:textSize="@dimen/_15ssp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/create_account"
+                                    android:layout_width="270dp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_marginLeft="@dimen/_14sdp"
+                                    android:layout_marginTop="@dimen/_25sdp"
+                                    android:background="#43C5FF"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="@string/createAc"
+                                    android:textSize="@dimen/_16ssp"
+                                    android:textStyle="bold" />
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/shine_btn_ca"
+                                    android:layout_width="19dp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_marginTop="@dimen/_25sdp"
+                                    android:background="@drawable/shine_btn" />
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:layout_width="@dimen/_200sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="19dp"
+                                android:fontFamily="@font/gelasio"
+                                android:text="By creating an account or logging in, you agree to"
+                                android:textSize="@dimen/_11ssp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="68dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="UpTrend's"
+                                    android:textSize="@dimen/_11ssp" />
+
+                                <TextView
+                                    android:id="@+id/terms_CA"
+                                    android:layout_width="111.85dp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="Conditions of Use"
+                                    android:textColor="#082DFB"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="and"
+                                    android:textSize="@dimen/_11ssp" />
+
+
+                                <TextView
+                                    android:id="@+id/privacy_policy_CA"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="Privacy Policy."
+                                    android:textColor="#082DFB"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <RelativeLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp">
+
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/btn_click2"
+                                        android:layout_width="@dimen/_14sdp"
+                                        android:layout_height="@dimen/_14sdp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@drawable/circle_background"
+                                        android:backgroundTint="@color/effect"
+                                        android:textColor="@color/black" />
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_19sdp"
+                                        android:layout_height="@dimen/_19sdp"
+                                        android:layout_marginLeft="7dp"
+                                        android:layout_marginTop="1dp"
+                                        android:background="@drawable/circle_background" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="@string/signIn2"
+                                    android:textSize="@dimen/_16ssp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="@string/already2"
+                                    android:textSize="@dimen/_15ssp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/layout_hide_show_signin"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/cardview_effect"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <EditText
+                                    android:id="@+id/email_signin"
+                                    android:layout_width="@dimen/_240sdp"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:layout_marginTop="@dimen/_16sdp"
+                                    android:background="@drawable/edittext_touch_effect"
+                                    android:drawableStart="@drawable/email_vector_effect"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:hint="@string/email"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="@dimen/_8sdp"
+                                    android:textSize="18sp" />
+
+
+                                <EditText
+                                    android:id="@+id/password_signin"
+                                    android:layout_width="@dimen/_240sdp"
+                                    android:layout_height="@dimen/_45sdp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:background="@drawable/edittext_touch_effect"
+                                    android:drawableStart="@drawable/key_vector_effect"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:hint="@string/password"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textPassword"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="@dimen/_8sdp"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txtForgotPassword"
+                                    android:layout_width="140dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="@string/forget"
+                                    android:textColor="#03A6EF"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_signin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_marginRight="70dp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="@string/showPass"
+                                    android:textSize="@dimen/_15ssp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/sign_in"
+                                        android:layout_width="270dp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_marginLeft="@dimen/_14sdp"
+                                        android:layout_marginTop="@dimen/_25sdp"
+                                        android:background="#43C5FF"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="@string/signIn2"
+                                        android:textSize="@dimen/_16ssp"
+                                        android:textStyle="bold" />
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/shine_btn_Sign"
+                                        android:layout_width="19dp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_marginTop="@dimen/_25sdp"
+                                        android:background="@drawable/shine_btn" />
+
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="240dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="By continuing you agree to Uptrend's"
+                                        android:textSize="@dimen/_11ssp" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:id="@+id/terms_signIn"
+                                        android:layout_width="111.85dp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="Conditions of Use"
+                                        android:textColor="#082DFB"
+                                        android:textSize="@dimen/_11ssp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="@dimen/_19sdp"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_marginLeft="@dimen/_3sdp"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="and"
+                                        android:textSize="@dimen/_11ssp" />
+
+
+                                    <TextView
+                                        android:id="@+id/privacy_policy_signIn"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="Privacy Policy."
+                                        android:textColor="#082DFB"
+                                        android:textSize="@dimen/_11ssp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_10sdp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!--            <com.github.ybq.android.spinkit.SpinKitView-->
+                <!--                android:layout_marginTop="@dimen/_10sdp"-->
+                <!--                android:id="@+id/loading2"-->
+                <!--                android:visibility="gone"-->
+                <!--                android:layout_width="@dimen/_150sdp"-->
+                <!--                android:layout_height="@dimen/_50sdp"-->
+                <!--                style="@style/SpinKitView.Large.ThreeBounce"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                app:SpinKit_Color="#FBC215"/>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40ssp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

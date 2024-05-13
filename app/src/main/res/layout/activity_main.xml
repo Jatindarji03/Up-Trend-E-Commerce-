@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--        <com.airbnb.lottie.LottieAnimationView-->
+    <!--            android:layout_width="@dimen/_150sdp"-->
+    <!--            android:layout_height="@dimen/_130sdp"-->
+    <!--            android:layout_marginTop="@dimen/_230sdp"-->
+    <!--            android:layout_marginLeft="@dimen/_68sdp"-->
+    <!--            app:lottie_autoPlay="true"-->
+    <!--            app:lottie_rawRes="@raw/fire"-->
+    <!--            app:lottie_loop="true" />-->
+
+
+    <ImageView
+        android:id="@+id/animation"
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="@dimen/_135sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:translationY="-180dp"
+        android:src="@drawable/fire_new_logo" />
+
+
+    <ImageView
+        android:id="@+id/animation2"
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="@dimen/_135sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_220sdp"
+        android:src="@drawable/fire_new_logo" />
+
+
+    <TextView
+        android:id="@+id/black"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="@dimen/_400sdp"
+        android:background="@drawable/circle_background" />
+
+        <TextView
+           android:layout_marginTop="@dimen/_350sdp"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:text="Up Trend"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_37ssp" />
+
+
+</RelativeLayout>

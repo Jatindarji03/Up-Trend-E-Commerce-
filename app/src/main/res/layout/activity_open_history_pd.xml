@@ -1,0 +1,2199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".open_history_pd">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            app:cardBackgroundColor="#6BE7F6"
+            app:cardElevation="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/close_btn_RA"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:drawableStart="@drawable/back11_vector"
+                    android:paddingStart="7dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:text="Order details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_45sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/completeOrderLayoutTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#E0F4E1"
+                    app:cardElevation="10dp">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:drawableStart="@drawable/succes_vector2"
+                        android:paddingStart="7dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Payment successful"
+                        android:textColor="#08AF0E"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Thank you. Your payment is now successful."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/_41sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="You just saved your cash !"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/returnOrderLayoutTop"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="#AEDDE3"
+                    app:cardElevation="10dp">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_179sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:drawableStart="@drawable/succes_vector" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_195sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Accepted"
+                        android:textColor="#08AF0E"
+                        android:textSize="@dimen/_14ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Refund Request"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="We accept your order request. The price of that product will be deposited in your bank account."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+                android:translationY="-5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_410sdp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardElevation="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/productImage"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="250dp"
+                                android:layout_marginTop="12dp"
+                                android:scaleType="centerCrop"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                                app:srcCompat="@drawable/ic_launcher_background" />
+
+
+                            <LinearLayout
+                                android:layout_width="230dp"
+                                android:layout_height="140dp"
+                                android:orientation="vertical"
+                                android:translationY="-95dp">
+
+                                <TextView
+                                    android:id="@+id/productName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:text="Product name"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16ssp"
+                                    android:textStyle="bold" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:translationY="-4dp">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutSize"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+
+                                        <TextView
+                                            android:id="@+id/productSize"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="15dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="9"
+                                            android:textColor="#7A7777"
+                                            android:textSize="@dimen/_13ssp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="1dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text=","
+                                            android:textColor="#7A7777"
+                                            android:textSize="@dimen/_13ssp" />
+
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:id="@+id/productColour"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:paddingStart="14.50dp"
+                                        android:text="Black"
+                                        android:textColor="#7A7777"
+                                        android:textSize="@dimen/_13ssp" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:translationY="-5dp">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dp"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="Seller :"
+                                        android:textColor="#7A7777"
+                                        android:textSize="@dimen/_13ssp" />
+
+
+                                    <TextView
+                                        android:id="@+id/storeName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:paddingStart="7dp"
+                                        android:text="Store name"
+                                        android:textColor="#7A7777"
+                                        android:textSize="@dimen/_13ssp" />
+
+
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/productPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:drawableStart="@drawable/rupee_vector"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:text="5999"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16ssp"
+                                    android:textStyle="bold"
+                                    android:translationY="-5dp" />
+
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:translationY="-90dp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_30sdp"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:layout_marginLeft="16dp"
+                                        android:background="@drawable/shopping_vector" />
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_17sdp"
+                                        android:layout_height="@dimen/_17sdp"
+                                        android:layout_marginLeft="60dp"
+                                        android:layout_marginTop="7dp"
+                                        android:background="@drawable/checked_vector"
+                                        android:backgroundTint="#07A80E" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="90dp"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="Order on,"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp" />
+
+
+                                    <TextView
+                                        android:id="@+id/txtOrderDAte"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="170dp"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="Nov 24 2024"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp" />
+
+
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1000dp"
+                                android:orientation="vertical"
+                                android:translationY="-120dp">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/first_purchasing_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="14dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="35dp">
+
+
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="14dp"
+                                            android:background="@drawable/truck23_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Order shipped"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="213dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 26 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="gone" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="66dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="87dp">
+
+
+                                        <TextView
+                                            android:layout_width="57dp"
+                                            android:layout_height="61dp"
+                                            android:layout_marginLeft="7dp"
+                                            android:background="@drawable/out_of_dv_vector"
+                                            android:translationY="-5dp" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Out of delivery"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="213dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="gone" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="118dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="139dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/delivered_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Deliverd"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="gone" />
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/shipping_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="14dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="35dp">
+
+
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="14dp"
+                                            android:background="@drawable/truck23_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Order shipped,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/shipingDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="213dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 26 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="66dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="87dp">
+
+
+                                        <TextView
+                                            android:layout_width="57dp"
+                                            android:layout_height="61dp"
+                                            android:layout_marginLeft="7dp"
+                                            android:background="@drawable/out_of_dv_vector"
+                                            android:translationY="-5dp" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Out of delivery"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="213dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="gone" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="118dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="139dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/delivered_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Deliverd"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="gone" />
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/delivered_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="14dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="35dp">
+
+
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="14dp"
+                                            android:background="@drawable/truck23_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Order shipped"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/orderShipped2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="213dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 26 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="66dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="87dp">
+
+
+                                        <TextView
+                                            android:layout_width="57dp"
+                                            android:layout_height="61dp"
+                                            android:layout_marginLeft="7dp"
+                                            android:background="@drawable/out_of_dv_vector"
+                                            android:translationY="-5dp" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Out of delivery,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/deliveredDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="213dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="118dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="139dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/delivered_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Deliverd,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/outOfDelivedDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/return_layout1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="14dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="35dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/delivered_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Delivered,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/deliverDate2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="178dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="66.50dp"
+                                        android:background="#F8E21F" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="87dp">
+
+
+                                        <TextView
+                                            android:layout_width="42dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="12dp"
+                                            android:background="@drawable/return_vector2"
+                                            android:translationY="-1dp" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#F8E21F" />
+
+
+                                        <TextView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Return,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/returnDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="118.20dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="139dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/location_vector22" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Pickup,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="gone" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="170dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="190dp">
+
+
+                                        <TextView
+                                            android:layout_width="33dp"
+                                            android:layout_height="33dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:background="@drawable/refund_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Refund,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <!--                                        <TextView-->
+                                        <!--                                            android:layout_width="wrap_content"-->
+                                        <!--                                            android:layout_height="wrap_content"-->
+                                        <!--                                            android:layout_marginLeft="168dp"-->
+                                        <!--                                            android:layout_marginTop="7dp"-->
+                                        <!--                                            android:fontFamily="@font/brygada_1918"-->
+                                        <!--                                            android:text="Nov 28 2024"-->
+                                        <!--                                            android:textColor="@color/black"-->
+                                        <!--                                            android:textSize="@dimen/_14ssp"-->
+                                        <!--                                            android:visibility="visible" />-->
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/return_layout2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="14dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="35dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/delivered_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Delivered,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/txtDelivery3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="178dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="66.50dp"
+                                        android:background="#F8E21F" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="87dp">
+
+
+                                        <TextView
+                                            android:layout_width="42dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="12dp"
+                                            android:background="@drawable/return_vector2"
+                                            android:translationY="-1dp" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#F8E21F" />
+
+
+                                        <TextView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Return,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/retrunDate2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="118.20dp"
+                                        android:background="#F8E21F" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="139dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/location_vector22" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#F8E21F" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Pickup,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/pickupDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="170dp"
+                                        android:background="#CED6D0" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="190dp">
+
+
+                                        <TextView
+                                            android:layout_width="33dp"
+                                            android:layout_height="33dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:background="@drawable/refund_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#CED6D0" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Refund,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <!--                                        <TextView-->
+                                        <!--                                            android:layout_width="wrap_content"-->
+                                        <!--                                            android:layout_height="wrap_content"-->
+                                        <!--                                            android:layout_marginLeft="168dp"-->
+                                        <!--                                            android:layout_marginTop="7dp"-->
+                                        <!--                                            android:fontFamily="@font/brygada_1918"-->
+                                        <!--                                            android:text="Nov 28 2024"-->
+                                        <!--                                            android:textColor="@color/black"-->
+                                        <!--                                            android:textSize="@dimen/_14ssp"-->
+                                        <!--                                            android:visibility="visible" />-->
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/return_layout3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="14dp"
+                                        android:background="#07A80E" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="35dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/delivered_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#07A80E" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Delivered,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/deliveryDate4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="178dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="66.50dp"
+                                        android:background="#F8E21F" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="87dp">
+
+
+                                        <TextView
+                                            android:layout_width="42dp"
+                                            android:layout_height="40dp"
+                                            android:layout_marginLeft="12dp"
+                                            android:background="@drawable/return_vector2"
+                                            android:translationY="-1dp" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#F8E21F" />
+
+
+                                        <TextView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Return,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/returnDate4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="118.20dp"
+                                        android:background="#F8E21F" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="139dp">
+
+
+                                        <TextView
+                                            android:layout_width="37dp"
+                                            android:layout_height="37dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:background="@drawable/location_vector22" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#F8E21F" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Pickup,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+
+                                        <TextView
+                                            android:id="@+id/pickupdate4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginLeft="68.50dp"
+                                        android:layout_marginTop="170dp"
+                                        android:background="#F8E21F" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="45dp"
+                                        android:layout_marginTop="190dp">
+
+
+                                        <TextView
+                                            android:layout_width="33dp"
+                                            android:layout_height="33dp"
+                                            android:layout_marginLeft="17dp"
+                                            android:background="@drawable/refund_vector" />
+
+
+                                        <TextView
+                                            android:layout_width="@dimen/_17sdp"
+                                            android:layout_height="@dimen/_17sdp"
+                                            android:layout_marginLeft="60dp"
+                                            android:layout_marginTop="9dp"
+                                            android:background="@drawable/checked_vector"
+                                            android:backgroundTint="#F8E21F" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="90dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Refund,"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp" />
+
+                                        <TextView
+                                            android:id="@+id/refund"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="168dp"
+                                            android:layout_marginTop="7dp"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="Nov 28 2024"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:visibility="visible" />
+
+
+                                        <!--                                        <TextView-->
+                                        <!--                                            android:layout_width="wrap_content"-->
+                                        <!--                                            android:layout_height="wrap_content"-->
+                                        <!--                                            android:layout_marginLeft="168dp"-->
+                                        <!--                                            android:layout_marginTop="7dp"-->
+                                        <!--                                            android:fontFamily="@font/brygada_1918"-->
+                                        <!--                                            android:text="Nov 28 2024"-->
+                                        <!--                                            android:textColor="@color/black"-->
+                                        <!--                                            android:textSize="@dimen/_14ssp"-->
+                                        <!--                                            android:visibility="visible" />-->
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:translationY="-85dp">
+
+
+                <LinearLayout
+                    android:id="@+id/cancel_return_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_47sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:visibility="visible"
+                        app:cardElevation="@dimen/_2sdp">
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/cancel_order_btn"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_background"
+                            android:drawableStart="@drawable/close_vector"
+                            android:drawableTint="@color/white"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:padding="@dimen/_10sdp"
+                            android:text="Cancel Order"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/return_order_btn"
+                            android:layout_width="@dimen/_170sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_background"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="Return Order"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/returnOrderBottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:layout_marginTop="5dp"
+                            app:cardElevation="3dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Rate your experience"
+                                android:textColor="#878484"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                            <com.like.LikeButton
+                                android:layout_width="35dp"
+                                android:layout_height="18dp"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="38dp"
+                                app:icon_size="15dp"
+                                app:icon_type="thumb" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="52dp"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Did you find this page helpful ?"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_marginTop="80dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="5dp"
+                            app:cardElevation="3dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Recent issues with this order"
+                                android:textColor="#878484"
+                                android:textSize="@dimen/_11ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginTop="35dp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="I want to return this product"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="65dp"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="Resolved"
+                                    android:textColor="#08AF0E"
+                                    android:textSize="@dimen/_14ssp" />
+
+
+                                <TextView
+                                    android:layout_width="@dimen/_5sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:text="|"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp" />
+
+
+                                <TextView
+                                    android:id="@+id/txtReturnDate2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:text="June 26 2004"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp" />
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutPriceDetailsHI"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_193sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_178sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="visible"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:fontFamily="@font/brygada_1918"
+                                    android:text="Price Details"
+                                    android:textColor="#6E6B6B"
+                                    android:textSize="@dimen/_13ssp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:id="@+id/layoutQuntityTotal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:layout_marginLeft="@dimen/_7sdp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:text="("
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/txtTotalHI"
+                                        android:layout_width="@dimen/_15sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="5"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_13ssp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_36sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="item"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_13ssp"
+                                        android:textStyle="bold"
+                                        android:translationX="-3dp" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:text=")"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp"
+                                        android:textStyle="bold"
+                                        android:translationX="-2dp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="List Price"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_140sdp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:background="@drawable/columan_vector"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:background="@drawable/rupee_vector"
+                                        android:backgroundTint="@color/black" />
+
+                                    <TextView
+                                        android:id="@+id/total_price_HI"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_15ssp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/gelasio"
+                                    android:text="Discount price"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_122sdp"
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_15sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:background="@drawable/rupee_vector"
+                                        android:backgroundTint="@color/black" />
+
+                                    <TextView
+                                        android:id="@+id/sellingPrice"
+                                        android:layout_width="@dimen/_70sdp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/brygada_1918"
+                                        android:text="00"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_15ssp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="@dimen/_280sdp"
+                                    android:layout_height="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/columan_vector"
+                                    android:backgroundTint="@color/black" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="Total Amount"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp"
+                                        android:textStyle="bold" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_99sdp"
+                                        android:layout_marginTop="@dimen/_7sdp"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/_15sdp"
+                                            android:layout_marginLeft="@dimen/_10sdp"
+                                            android:background="@drawable/rupee_vector" />
+
+                                        <TextView
+                                            android:id="@+id/total_order_A2C"
+                                            android:layout_width="@dimen/_75sdp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="00"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_15ssp"
+                                            android:textStyle="bold" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:fontFamily="@font/gelasio"
+                                        android:text="● Payment :"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14ssp"
+                                        android:textStyle="bold" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/_15sdp"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:background="@drawable/rupee_vector" />
+
+                                        <TextView
+                                            android:id="@+id/totalAmt"
+                                            android:layout_width="@dimen/_75sdp"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/brygada_1918"
+                                            android:text="00"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_14ssp"
+                                            android:textStyle="bold" />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

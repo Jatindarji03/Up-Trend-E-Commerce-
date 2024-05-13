@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/product_image_RV"
+            android:layout_width="120dp"
+            android:layout_height="123dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+
+        <TextView
+            android:id="@+id/product_name_RV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:fontFamily="@font/dm_serif_display"
+            android:text="Product Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:fontFamily="@font/brygada_1918"
+            android:text="Price :-"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/product_price_RV"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:drawableEnd="@drawable/rupee_vector24"
+            android:drawablePadding="@dimen/_4sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="2000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:fontFamily="@font/brygada_1918"
+            android:text="Total stock :-"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <TextView
+            android:id="@+id/product_stock_RV"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="25"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+
+
+        <TextView
+            android:id="@+id/product_delete_RV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="25dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:drawableTint="@color/red"
+            android:drawableStart="@drawable/delete_vector22" />
+
+        <TextView
+            android:id="@+id/product_edit_RV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/product_image_RV"
+            android:drawableStart="@drawable/edit_vector24"
+            android:drawableTint="#082DFB"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

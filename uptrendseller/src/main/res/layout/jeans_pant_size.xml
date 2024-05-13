@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:fontFamily="@font/brygada_1918"
+        android:text="Your product stock !"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/jeans_size1"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginLeft="@dimen/_28sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="28"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:background="@drawable/raw_vector" />
+
+
+        <TextView
+            android:id="@+id/jeans_size2"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="30"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:background="@drawable/raw_vector" />
+
+
+        <TextView
+            android:id="@+id/jeans_size3"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="32"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:background="@drawable/raw_vector" />
+
+
+        <TextView
+            android:id="@+id/jeans_size4"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="34"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:background="@drawable/raw_vector" />
+
+
+        <TextView
+            android:id="@+id/jeans_size5"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="36"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:background="@drawable/raw_vector" />
+
+
+        <TextView
+            android:id="@+id/jeans_size6"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="38"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_17sdp"
+            android:background="@drawable/raw_vector" />
+
+
+        <TextView
+            android:id="@+id/jeans_size7"
+            android:layout_width="@dimen/_47sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/size_black_bg"
+            android:button="@color/transparent"
+            android:fontFamily="@font/brygada_1918"
+            android:padding="@dimen/_8sdp"
+            android:text="40"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMinus6"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/value6"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus6"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/txtMinus7"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/value7"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus7"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txtMinus8"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/value8"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus8"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txtMinus9"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/value9"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus9"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/txtMinus10"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/value10"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus10"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txtMinus11"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/value11"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus11"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/txtMinus12"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/squre_red_bg1"
+                android:drawableStart="@drawable/minus_red_vector"
+                android:onClick="decrement"
+                android:paddingStart="1dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:id="@+id/value12"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlus12"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/squre_blue_bg1"
+                android:drawableStart="@drawable/plus_blue_vector24"
+                android:onClick="increment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_2sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Total Stock :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17ssp" />
+
+
+                <TextView
+                    android:id="@+id/stock_pant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17ssp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

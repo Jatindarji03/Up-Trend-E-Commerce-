@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewHistoryContainerNO"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/historyProductImageNoReturn"
+            android:layout_width="85dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+
+
+        <TextView
+            android:id="@+id/orderDateNOReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="26/6/2004"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <TextView
+            android:id="@+id/ordertimeNOREturn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="6:00 AM"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_100sdp">
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/orderBrandNameNO"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:fontFamily="@font/dm_serif_display"-->
+<!--                android:text="Brand Name"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_13ssp"-->
+<!--                android:textStyle="bold" />-->
+
+
+            <TextView
+                android:id="@+id/productNAmeNoReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/brygada_1918"
+                android:layout_marginTop="13dp"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+
+            <TextView
+                android:id="@+id/productPriceNotificationReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:drawableStart="@drawable/rupee_vector24"
+                android:fontFamily="@font/brygada_1918"
+                android:text="5999"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Order Return !"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+
+            <LinearLayout
+                android:translationY="-1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Your payment amount is return in your bank account in 7 days...."
+                    android:textStyle="bold"
+                    android:textColor="#2196F3"
+                    android:textSize="@dimen/_13ssp" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

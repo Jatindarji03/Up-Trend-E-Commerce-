@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_315sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="#6BE7F6">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/fire"
+                app:lottie_loop="true" />
+
+            <ImageView
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:src="@drawable/fire" />
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_85sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/miltonian_tattoo"
+                android:text="Up Trend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_193sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/miltonian_tattoo"
+                android:text="Seller"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22ssp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/marquee_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_61sdp"
+            android:text="          Welcome to UpTrend Seller! Please You can Log in and Sign up your account.."
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            android:fontFamily="@font/gelasio"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/signUp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Sign up"
+                android:translationX="@dimen/_180sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_350sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="#C8F0F4"
+                android:translationX="-235dp"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardPreventCornerOverlap="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_170sdp"
+                    android:layout_marginTop="8dp"
+                    android:text="Log in"
+                    android:fontFamily="@font/brygada_1918"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20ssp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/_20sdp"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_240sdp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardMaxElevation="@dimen/_20sdp"
+                android:translationY="@dimen/_60sdp"
+                android:translationX="-393dp">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/email_login"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:fontFamily="@font/brygada_1918"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableStart="@drawable/email_vector_effect"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:hint="email"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_150sdp"
+                        android:layout_marginTop="10dp"
+                        android:text="forget password"
+                        android:textColor="#0593D3"
+                        android:fontFamily="@font/gelasio"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <EditText
+                        android:id="@+id/password_login"
+                        android:layout_width="@dimen/_240sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/brygada_1918"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableStart="@drawable/key_vector_effect"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:inputType="textPassword"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_signin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="show password"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/gelasio"
+                        android:textSize="@dimen/_13ssp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_admin"
+            android:layout_width="140dp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:translationY="-260dp"
+            android:textAlignment="center"
+            android:text="log in"
+            android:textSize="18sp"
+            android:fontFamily="@font/gelasio"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:translationY="-305dp"
+            android:id="@+id/shine_btn_Sign"
+            android:layout_width="19dp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/shine_btn"
+            android:layout_marginLeft="@dimen/_78sdp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:translationY="-155dp"
+            android:text="Don't have an account?"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/brygada_1918"
+            android:layout_marginLeft="@dimen/_27sdp"/>
+
+        <TextView
+            android:id="@+id/new_account_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="SIGN UP"
+            android:textSize="@dimen/_17ssp"
+            android:translationY="-191dp"
+            android:fontFamily="@font/brygada_1918"
+            android:layout_marginLeft="@dimen/_195sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

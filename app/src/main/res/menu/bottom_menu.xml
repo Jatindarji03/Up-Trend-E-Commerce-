@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/home_vector"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottom_categories"
+        android:icon="@drawable/category_vector"
+        android:title="Categories" />
+    <item
+        android:id="@+id/bottom_account"
+        android:icon="@drawable/account_vector"
+        android:title="Account" />
+    <item
+        android:id="@+id/bottom_add_to_cart"
+        android:icon="@drawable/add_to_bag_vector"
+        android:title="Bag" />
+
+</menu>

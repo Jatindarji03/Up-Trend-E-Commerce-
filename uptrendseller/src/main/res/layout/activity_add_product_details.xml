@@ -1,0 +1,1908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/blue_top"
+            android:orientation="vertical"
+            android:translationX="-1.20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_21sdp"
+                android:fontFamily="@font/chonburi"
+                android:gravity="center"
+                android:text="Add Product Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_21ssp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/save_details_txt"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:text="Save &amp; Next"
+            android:textColor="#042AFF"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        tools:context=".add_product_details">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Brand Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/brand_name"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Original Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/original_price"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/edittext_touch_effect"
+                android:drawableEnd="@drawable/rupee_vector"
+                android:fontFamily="@font/brygada_1918"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Selling Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/selling_price"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/edittext_touch_effect"
+                android:drawableEnd="@drawable/rupee_vector"
+                android:fontFamily="@font/brygada_1918"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/clothes_hading_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:freezesText="true"
+                android:text="How much product size and their stock ?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/layoutShirt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+
+                        <include layout="@layout/shirt_size" />
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutPant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+
+                        <include layout="@layout/jeans_pant_size" />
+
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutFootWare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+
+                        <include layout="@layout/shoes_size" />
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/other_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="How much product stock ?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/txtMinus55"
+                        android:layout_width="@dimen/_19sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:background="@drawable/squre_red_bg1"
+                        android:drawableStart="@drawable/minus_red_vector"
+                        android:onClick="decrement"
+                        android:paddingStart="2.30dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                    <TextView
+                        android:id="@+id/value55"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_9sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPlus55"
+                        android:layout_width="@dimen/_19sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_marginLeft="@dimen/_9sdp"
+                        android:background="@drawable/squre_blue_bg1"
+                        android:drawableStart="@drawable/plus_blue_vector24"
+                        android:onClick="increment"
+                        android:paddingStart="@dimen/_1sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_2sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Total Stock :"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_17ssp" />
+
+
+                            <TextView
+                                android:id="@+id/totalStockOtherCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_17ssp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="How much product packing ?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pack_of"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/edittext_touch_effect"
+                android:fontFamily="@font/brygada_1918"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Product Colour"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:translationY="-5dp">
+
+
+                <TextView
+                    android:id="@+id/get_color_name"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:text="Red"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17ssp" />
+
+                <TextView
+                    android:id="@+id/get_color"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:background="@drawable/circle_color_bg"
+                    android:backgroundTint="#FF0000"
+                    android:translationY="-10dp" />
+
+
+                <TextView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/circle_color_bg"
+                    android:translationX="-33.60dp"
+                    android:translationY="-10dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:translationY="-8dp">
+
+
+                <TextView
+                    android:id="@+id/instruction_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:drawableEnd="@drawable/down_key"
+                    android:drawableTint="#03A9F4"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Choose Product Colour"
+                    android:textColor="#0790FD"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="1120dp"
+                android:layout_marginLeft="17dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:id="@+id/colourRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour1"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Aquamarine"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <TextView
+                            android:id="@+id/color1"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#7FFFD4"
+                            android:translationX="248dp"
+                            android:translationY="-39dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:translationX="248dp"
+                            android:translationY="-72dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour2"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Azure"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-65dp" />
+
+                        <TextView
+                            android:id="@+id/color2"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#007FFF"
+                            android:translationX="248dp"
+                            android:translationY="-104dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-138dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour3"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Black"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-129dp" />
+
+                        <TextView
+                            android:id="@+id/color3"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#000000"
+                            android:translationX="248dp"
+                            android:translationY="-168dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-202dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour4"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Brown"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-194dp" />
+
+                        <TextView
+                            android:id="@+id/color4"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#964B00"
+                            android:translationX="248dp"
+                            android:translationY="-232dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-266dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour5"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Coral"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-259dp" />
+
+                        <TextView
+                            android:id="@+id/color5"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FF7F50"
+                            android:translationX="248dp"
+                            android:translationY="-297dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-331dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour6"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Crimson"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-323dp" />
+
+                        <TextView
+                            android:id="@+id/color6"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#DC143C"
+                            android:translationX="248dp"
+                            android:translationY="-361dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-395dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour7"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Cyan"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-387dp" />
+
+                        <TextView
+                            android:id="@+id/color7"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#00FFFF"
+                            android:translationX="248dp"
+                            android:translationY="-425dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-459dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour8"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Golden"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-451dp" />
+
+                        <TextView
+                            android:id="@+id/color8"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FFD700"
+                            android:translationX="248dp"
+                            android:translationY="-489dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-523dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour9"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Gray"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-515dp" />
+
+                        <TextView
+                            android:id="@+id/color9"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#808080"
+                            android:translationX="248dp"
+                            android:translationY="-553dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-587dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour10"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Green"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-579dp" />
+
+                        <TextView
+                            android:id="@+id/color10"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#008000"
+                            android:translationX="248dp"
+                            android:translationY="-617dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-651dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour11"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Hot Pink"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-643dp" />
+
+                        <TextView
+                            android:id="@+id/color11"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FF69B4"
+                            android:translationX="248dp"
+                            android:translationY="-681dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-715dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour12"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Lime"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-707dp" />
+
+                        <TextView
+                            android:id="@+id/color12"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#32CD32"
+                            android:translationX="248dp"
+                            android:translationY="-745dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-779dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour13"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Magent"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-771dp" />
+
+                        <TextView
+                            android:id="@+id/color13"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FF00FF"
+                            android:translationX="248dp"
+                            android:translationY="-809dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-843dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour14"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Maroon"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-835dp" />
+
+                        <TextView
+                            android:id="@+id/color14"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#800000"
+                            android:translationX="248dp"
+                            android:translationY="-873dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-907dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour15"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Navy Blue"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-899dp" />
+
+                        <TextView
+                            android:id="@+id/color15"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#000080"
+                            android:translationX="248dp"
+                            android:translationY="-937dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-971dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour16"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Olive"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-963dp" />
+
+                        <TextView
+                            android:id="@+id/color16"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#808000"
+                            android:translationX="248dp"
+                            android:translationY="-1001dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1035dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour17"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Orange"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1027dp" />
+
+                        <TextView
+                            android:id="@+id/color17"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FFA500"
+                            android:translationX="248dp"
+                            android:translationY="-1065dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1099dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour18"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Purple"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1091dp" />
+
+                        <TextView
+                            android:id="@+id/color18"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#A020F0"
+                            android:translationX="248dp"
+                            android:translationY="-1129dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1163dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour19"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Red"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1155dp" />
+
+                        <TextView
+                            android:id="@+id/color19"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FF0000"
+                            android:translationX="248dp"
+                            android:translationY="-1193dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1227dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour20"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Royal Blue"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1219dp" />
+
+                        <TextView
+                            android:id="@+id/color20"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#4169E1"
+                            android:translationX="248dp"
+                            android:translationY="-1257dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1291dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour21"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Silver"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1283dp" />
+
+                        <TextView
+                            android:id="@+id/color21"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#C0C0C0"
+                            android:translationX="248dp"
+                            android:translationY="-1321dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1355dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour22"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Teal"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1347dp" />
+
+                        <TextView
+                            android:id="@+id/color22"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#008080"
+                            android:translationX="248dp"
+                            android:translationY="-1385dp" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1419dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour23"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Wheat"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1411dp" />
+
+                        <TextView
+                            android:id="@+id/color23"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#F5DEB3"
+                            android:translationX="248dp"
+                            android:translationY="-1449dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1483dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_colour24"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="White"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1475dp" />
+
+
+                        <TextView
+                            android:id="@+id/color24"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FFFFFF"
+                            android:translationX="248dp"
+                            android:translationY="-1513dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1547dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_colour25"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_34sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Yellow"
+                            android:textSize="@dimen/_16ssp"
+                            android:translationY="-1539dp" />
+
+                        <TextView
+                            android:id="@+id/color25"
+                            android:layout_width="@dimen/_27sdp"
+                            android:layout_height="@dimen/_27sdp"
+                            android:background="@drawable/circle_color_bg"
+                            android:backgroundTint="#FFFF00"
+                            android:translationX="248dp"
+                            android:translationY="-1577dp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:background="@drawable/radio_circle_border"
+                            android:translationX="248dp"
+                            android:translationY="-1611dp" />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/mobileDetailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_marginLeft="@dimen/_28sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Ram"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/ram_mobile"
+                                android:layout_width="140dp"
+                                android:layout_height="@dimen/_37sdp"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:background="@drawable/edittext_touch_effect"
+                                android:fontFamily="@font/brygada_1918"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16ssp" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_marginLeft="@dimen/_28sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Storage"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/storage_mobile"
+                                android:layout_width="140dp"
+                                android:layout_height="@dimen/_37sdp"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:background="@drawable/edittext_touch_effect"
+                                android:fontFamily="@font/brygada_1918"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16ssp" />
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Processor"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/processor_mobile"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Rear Camera"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/rear_camera_mobile"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Front Camera"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/front_camera_mobile"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Battery"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/battery_mobile"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/fabric_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Product Fabric"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/spinner_fabric"
+                        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="@dimen/_245sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp">
+
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/fabricType"
+                            android:layout_width="@dimen/_245sdp"
+                            android:layout_height="50dp"
+                            android:background="#3303A9F4"
+                            android:fontFamily="@font/brygada_1918"
+                            android:hint="Select Product Fabric"
+                            android:inputType="none"
+                            android:textSize="@dimen/_13sdp"
+                            app:simpleItems="@array/fabric_type_spinner" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Who is this thing for ?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/spinner_ideal"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="@dimen/_245sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/idealType"
+                        android:layout_width="@dimen/_245sdp"
+                        android:layout_height="50dp"
+                        android:background="#3303A9F4"
+                        android:fontFamily="@font/brygada_1918"
+                        android:hint="Select Ideal For"
+                        android:inputType="none"
+                        android:textSize="@dimen/_13sdp"
+                        app:simpleItems="@array/idel_type_spinner" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/selection_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Where is the occasion ?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/spinner_selection"
+                        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="@dimen/_245sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp">
+
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/selectionType"
+                            android:layout_width="@dimen/_245sdp"
+                            android:layout_height="50dp"
+                            android:background="#3303A9F4"
+                            android:fontFamily="@font/brygada_1918"
+                            android:hint="Select Selection For"
+                            android:inputType="none"
+                            android:textSize="@dimen/_13sdp"
+                            app:simpleItems="@array/selection_type_spinner" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/fabric_care_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Can you take care of anything to wash ?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/spinner_fabric_care"
+                        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="@dimen/_245sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp">
+
+
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/fabric_careType"
+                            android:layout_width="@dimen/_245sdp"
+                            android:layout_height="50dp"
+                            android:background="#3303A9F4"
+                            android:fontFamily="@font/brygada_1918"
+                            android:hint="Select Fabric Care"
+                            android:inputType="none"
+                            android:textSize="@dimen/_13sdp"
+                            app:simpleItems="@array/fabric_care_type_spinner" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="How much weight in one product ?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/weight_product"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:background="@drawable/edittext_touch_effect"
+                    android:completionThreshold="1"
+                    android:fontFamily="@font/brygada_1918"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <TextView
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginLeft="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Enter product search keyword"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword1"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/search_linear1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/plus_click1"
+                            android:layout_width="@dimen/_37sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_32ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/search_key_hide_gone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword2"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/search_linear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/plus_click2"
+                            android:layout_width="@dimen/_37sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_32ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_key_hide_gone3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword3"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/search_linear3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/plus_click3"
+                            android:layout_width="@dimen/_37sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_32ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_key_hide_gone4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword4"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/search_linear4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/plus_click4"
+                            android:layout_width="@dimen/_37sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_32ssp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/search_key_hide_gone5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/search_keyword5"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:background="@drawable/edittext_touch_effect"
+                        android:fontFamily="@font/brygada_1918"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/search_linear5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

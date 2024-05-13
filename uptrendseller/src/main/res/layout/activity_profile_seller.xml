@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_seller">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/background_blue">
+
+            <TextView
+                android:id="@+id/save_btn"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_230sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Save"
+                android:textColor="#052BFB"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/nosifer"
+                android:gravity="center"
+                android:text="Your Profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="190dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img2"
+            android:translationY="-80dp" />
+
+
+        <TextView
+            android:id="@+id/add_img_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:translationY="-75dp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="+ Add image"
+            android:textAlignment="center"
+            android:textColor="#0A91FB"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:inputType="text"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_17ssp"
+            android:translationY="-52dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="—————————— Mobile No —————————"
+            android:gravity="center"
+            android:translationY="-43dp"
+            android:textColor="#03A9F4"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:fontFamily="@font/brygada_1918"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="+91"
+                android:translationX="@dimen/_30sdp"
+                android:translationY="-39dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/profile_mobile_no"
+            android:layout_width="265dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_18ssp"
+            android:translationY="-78dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="——————————— Email ——————————"
+            android:gravity="center"
+            android:translationY="-70dp"
+            android:textColor="#03A9F4"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brygada_1918"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:inputType="text"
+            android:textSize="@dimen/_17ssp"
+            android:translationY="-68dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:text="————————— Display Name ————————"
+            android:gravity="center"
+            android:translationY="-60dp"
+            android:textColor="#03A9F4"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/profile_display"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/brygada_1918"
+            android:paddingTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:inputType="text"
+            android:textSize="@dimen/_17ssp"
+            android:translationY="-60dp" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

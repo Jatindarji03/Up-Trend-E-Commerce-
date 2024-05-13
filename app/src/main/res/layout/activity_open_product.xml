@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".open_product">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="@dimen/_15sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddToCart"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:background="@drawable/btn_background22"
+                android:drawableStart="@drawable/add_to_bag2"
+                android:fontFamily="@font/dm_serif_display"
+                android:padding="@dimen/_10sdp"
+                android:text="add to bag"
+                android:textColor="#05DFFD"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBuyNow"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:background="@drawable/btn_background"
+                android:drawableStart="@drawable/skip_vector"
+                android:fontFamily="@font/dm_serif_display"
+                android:padding="@dimen/_10sdp"
+                android:text="buy now"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="3000"
+                app:iss_period="2000"
+                app:iss_title_background="@drawable/default_gradient" />
+
+
+            <TextView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/back2_vector"
+                android:paddingStart="7dp"
+                android:translationY="-460dp" />
+
+
+            <CheckBox
+                android:id="@+id/likeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_240sdp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/white"
+                android:button="@drawable/heart_selector"
+                android:translationY="-170dp" />
+
+            <TextView
+                android:id="@+id/share_btn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_240sdp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/send_vector"
+                android:paddingStart="10dp"
+                android:translationY="-160dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="-120dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_brand_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="BRAND NAME"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Round_neck Sweatshirt"
+                        android:textColor="#4A4949"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_19sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/rating_shape"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/txt_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:drawableEnd="@drawable/star_vector"
+                            android:drawablePadding="1dp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="4.9"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11ssp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/_6sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginTop="2.50dp"
+                            android:background="@drawable/raw_vector" />
+
+
+                        <TextView
+                            android:id="@+id/txt_rating_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="1000"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/linear1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/rupee_vector"
+                                android:translationY="-3dp" />
+
+                            <TextView
+                                android:id="@+id/txt_product_selling_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="5999"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_19ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.80dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="MRP"
+                                android:textColor="#918C8C"
+                                android:textSize="@dimen/_14ssp" />
+
+
+                            <TextView
+                                android:id="@+id/text_product_original_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:background="@drawable/columan_vector"
+                                android:drawableStart="@drawable/rupee_silver_vector"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="6999"
+                                android:textColor="#8C8686"
+                                android:textSize="@dimen/_14ssp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linear3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.80dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txtDiscount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:drawableEnd="@drawable/percentage_vector"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="25"
+                                android:textColor="#08AC0F"
+                                android:textSize="@dimen/_14ssp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_17sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Price inclusive of all taxes."
+                        android:textColor="#4A4949"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextureView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="-120dp"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Color"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18ssp" />
+
+
+                    <TextView
+                        android:id="@+id/get_PD_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Yeallow"
+                        android:textColor="#4A4949"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                    <TextView
+                        android:id="@+id/color_name_txt"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_marginLeft="@dimen/_21sdp"
+                        android:background="@drawable/circle_color_bg"
+                        android:backgroundTint="#FF0000"
+                        android:translationY="8dp" />
+
+
+                    <TextView
+                        android:id="@+id/color_txt"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/circle_color_bg"
+                        android:translationX="20.60dp"
+                        android:translationY="-35dp" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutOtherCategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:translationY="-120dp"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+
+                    app:cardElevation="5dp">
+
+
+                    <TextView
+                        android:id="@+id/product_not_available"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#F80000"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sizeCardView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:translationY="-120dp"
+                android:visibility="gone"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_shirt_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="Size"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18ssp" />
+
+
+                            <TextView
+                                android:id="@+id/txtSizeChart01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_150sdp"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="Size chart"
+                                android:textColor="#088EF8"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <RadioGroup
+                                android:id="@+id/radioGroupShirt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonS"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginLeft="@dimen/_20sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent" />
+
+
+                                <TextView
+                                    android:id="@+id/shirt_size1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="S"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-132dp"
+                                    android:translationY="-40dp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonM"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="90dp"
+                                    android:translationY="-84dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shirt_size2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="M"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-66dp"
+                                    android:translationY="-123dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonL"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="157dp"
+                                    android:translationY="-168dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shirt_size3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="L"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="2dp"
+                                    android:translationY="-207dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonXL"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="224dp"
+                                    android:translationY="-252dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shirt_size4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="XL"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="68dp"
+                                    android:translationY="-291dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonXXl"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="291dp"
+                                    android:translationY="-336dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shirt_size5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="XXL"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_19ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="135dp"
+                                    android:translationY="-375dp" />
+
+
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:id="@+id/few_left_txt_shirt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_55sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text=""
+                                android:textColor="#F80000"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_shoes_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="Size"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18ssp" />
+
+
+                            <TextView
+                                android:id="@+id/txtSizeChart02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_150sdp"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="Size chart"
+                                android:textColor="#088EF8"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:id="@+id/radioGroupShoes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton6"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginLeft="@dimen/_20sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent" />
+
+
+                                <TextView
+                                    android:id="@+id/shoes_size1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="6"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-132dp"
+                                    android:translationY="-40dp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton7"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="90dp"
+                                    android:translationY="-84dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shoes_size2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="7"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-66dp"
+                                    android:translationY="-123dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton8"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="157dp"
+                                    android:translationY="-168dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shoes_size3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="8"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="2dp"
+                                    android:translationY="-207dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton9"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="224dp"
+                                    android:translationY="-252dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shoes_size4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="9"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="68dp"
+                                    android:translationY="-291dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton10"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="291dp"
+                                    android:translationY="-336dp" />
+
+
+                                <TextView
+                                    android:id="@+id/shoes_size5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="10"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_22ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="135dp"
+                                    android:translationY="-375dp" />
+
+
+                            </RadioGroup>
+
+                            <TextView
+                                android:id="@+id/few_left_txt_shoes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_55sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text=""
+                                android:textColor="#F80000"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_jeans_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="Size"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18ssp" />
+
+
+                            <TextView
+                                android:id="@+id/txtSizeChart03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_150sdp"
+                                android:fontFamily="@font/dm_serif_display"
+                                android:text="Size chart"
+                                android:textColor="#088EF8"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:id="@+id/radioGroupJeans"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton28"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:layout_marginLeft="@dimen/_7sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="28"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-149dp"
+                                    android:translationY="-34dp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton30"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="58dp"
+                                    android:translationY="-78dp" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="30"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-101dp"
+                                    android:translationY="-112dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton32"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="108dp"
+                                    android:translationY="-156dp" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="32"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-51dp"
+                                    android:translationY="-190dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton34"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="158dp"
+                                    android:translationY="-234dp" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="34"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="-1dp"
+                                    android:translationY="-267dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton36"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="209dp"
+                                    android:translationY="-313dp" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="36"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="49dp"
+                                    android:translationY="-346dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton38"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="260dp"
+                                    android:translationY="-391dp" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="38"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="101dp"
+                                    android:translationY="-424dp" />
+
+
+                                <RadioButton
+                                    android:id="@+id/radioButton40"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:background="@drawable/radio_selector"
+                                    android:button="@color/transparent"
+                                    android:translationX="311dp"
+                                    android:translationY="-469dp" />
+
+
+                                <TextView
+                                    android:id="@+id/jeans_size7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/dm_serif_display"
+                                    android:text="40"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18ssp"
+                                    android:textStyle="bold"
+                                    android:translationX="150dp"
+                                    android:translationY="-502dp" />
+
+
+                            </RadioGroup>
+
+
+                            <TextView
+                                android:id="@+id/jeans_left_txt_shirt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_55sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text=""
+                                android:textColor="#F80000"
+                                android:textSize="@dimen/_11ssp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:translationY="-120dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:text="Delivery details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/truck25_vector" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="FREE Delivery"
+                        android:textColor="#04B60B"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/columan_vector"
+                        android:drawableStart="@drawable/rupee_silver_vector"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="40"
+                        android:textColor="#8C8686"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:background="@drawable/raw_vector"
+                        android:backgroundTint="#4E4C4C" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="Delivery by"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="26 June, Wendesday"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginLeft="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_71sdp"
+                    android:background="@drawable/return_vector2" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_75sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="7 days return policy..."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationY="-120dp"
+                app:cardElevation="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:text="Product details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+
+                <TextView
+                    android:id="@+id/all_details_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_200sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:text="All details"
+                    android:textColor="#088EF8"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/mobileLayoutGone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:id="@+id/fabric_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/fabric_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Pure cotton"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/selection_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Men"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Package contains :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/quantity_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="1"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_washing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/washing_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Machine wash"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Product weight :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/weight_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="1000 gram"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_occasion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/occasion_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Formal wear"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/mobileLayoutVisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/ram_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="64"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="GB RAM"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="|"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_16ssp" />
+
+
+                            <TextView
+                                android:id="@+id/rom_storage_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="128"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="GB ROM"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Processor :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/processor_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Octa core 2630"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="●"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="Rear Camera :"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:id="@+id/rear_camera_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:text="64MP + 8MP + 2MP"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                    </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Front Camera :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/front_camera_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="32MP"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Battery :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/battery_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="6000 mAh"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_10sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_all_details_HS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:text="Other information"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18ssp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●  MRP                   :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="Rs."
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/mrp_details_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_1sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="20000"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="inclusive of all taxes"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●  Marketed By   :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/market_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:paddingEnd="@dimen/_7sdp"
+                                android:text="Badal faliya , machiwad , Bilimora Village : Bilimora , Taluka : Gandevi , Dist : Navsari , Gujarat."
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●  Net qty               :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/quntity2_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:paddingEnd="@dimen/_7sdp"
+                                android:text="1"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="N"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●  Imported By    :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:id="@+id/import_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="Badal faliya , machiwad , Bilimora Village : Bilimora , Taluka : Gandevi , Dist : Navsari , Gujarat."
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●  Country Of       :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:paddingEnd="@dimen/_7sdp"
+                                android:text="INDIA"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingEnd="@dimen/_7sdp"
+                            android:text="Origin"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_13ssp"
+                            android:translationY="-5dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:translationY="-4dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:text="●  Customer         :"
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/brygada_1918"
+                                android:paddingEnd="@dimen/_12sdp"
+                                android:text="Badal faliya , machiwad , Bilimora Village : Bilimora , Taluka : Gandevi , Dist : Navsari , Gujarat."
+                                android:textColor="#4A4848"
+                                android:textSize="@dimen/_13ssp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_22sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingEnd="@dimen/_7sdp"
+                            android:text="Care Address"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_12ssp"
+                            android:translationY="-65dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_113sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingEnd="@dimen/_7sdp"
+                            android:text="Ph :"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_12ssp"
+                            android:translationY="-30dp" />
+
+
+                        <TextView
+                            android:id="@+id/mobile_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginLeft="@dimen/_137sdp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:paddingEnd="@dimen/_7sdp"
+                            android:text="6353394323"
+                            android:textColor="#223BCA"
+                            android:textSize="@dimen/_13ssp"
+                            android:translationY="-50dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginLeft="@dimen/_113sdp"
+                            android:fontFamily="@font/brygada_1918"
+                            android:paddingEnd="@dimen/_7sdp"
+                            android:text="Email :"
+                            android:textColor="#4A4848"
+                            android:textSize="@dimen/_12ssp"
+                            android:translationY="-57dp" />
+
+
+                        <TextView
+                            android:id="@+id/email_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_155sdp"
+                            android:fontFamily="@font/dm_serif_display"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:text="moondhimmar@gmail.com"
+                            android:textColor="#223BCA"
+                            android:textSize="@dimen/_13ssp"
+                            android:translationY="-77dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:translationY="-120dp"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Ratings"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18ssp" />
+
+
+                    <TextView
+                        android:id="@+id/rating_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="4.7"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_50ssp" />
+
+                    <TextView
+                        android:id="@+id/ratingBar_total_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_28sdp"
+                        android:drawableStart="@drawable/bracket_left_vector"
+                        android:drawableEnd="@drawable/bracket_right_vector"
+                        android:drawablePadding="-5dp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:paddingBottom="@dimen/_1sdp"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:translationY="-10dp" />
+
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/rating_Bar"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_93sdp"
+                    android:paddingTop="@dimen/_40sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:progressTint="#FFE502"
+                    android:rating="4" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:translationY="-110dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="Similar To"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewSuggestedProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_300sdp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

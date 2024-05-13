@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="#6BE7F6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/miltonian_tattoo"
+            android:gravity="center"
+            android:text="Privacy Policy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_26ssp" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_95sdp"
+        tools:context=".privacy_policy_seller">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:fontFamily="@font/gelasio"
+                            android:text="HELLO!"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20ssp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/hello_hand"
+                            android:translationX="-10dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/gelasio"
+                        android:text="Before you can create an account, please read and accept our Privacy Policy."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/_9sdp"
+                    android:layout_height="@dimen/_9sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/green_circle_bg" />
+
+                <TextView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Last updated : 22/12/23"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp" />
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/gelasio"
+                        android:text="⚫ Thank you for choosing UpTrend! Your privacy is important to us. This Privacy Policy outlines how UpTrend ('we,' 'our,' or 'us') collects, uses, shares, and protects your personal information when you use our mobile application (the 'App'). By using the App, you agree to the terms and conditions of this Privacy Policy."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="1. Information We Collect:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="a. Personal Information:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- When you create an account, we may collect information such as your name, email address, and phone number."
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- If you connect your social media accounts, we may collect information from those accounts."
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="b. Usage Information:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We may collect information about how you use the App, including your interactions, preferences, and settings."
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="c. Device Information:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We may collect information about your device, including its model, operating system, and unique identifiers."
+                        android:textSize="@dimen/_13ssp" />
+
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="2. How We Use Your Information:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="a. Provide and Improve Services:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We use your information to provide and enhance the functionality of the App, including personalized features and content."
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="b. Communicate with You:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We may use your contact information to send you important updates, notifications, and promotional materials."
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="c. Analytics and Research:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We analyze user behavior to improve our services, troubleshoot issues, and conduct research."
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="d. Legal Compliance:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We may use your information to comply with legal obligations, resolve disputes, and enforce our terms and policies."
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="3. Sharing Your Information:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="a. Third-Party Service Providers:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We may share your information with third-party service providers to assist with app development, maintenance, and analytics."
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="b. Legal Requirements:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="- We may disclose your information if required by law or in response to a court order or government request."
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="4. Your Choices:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="a. Account Information:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:text="- You can review and update your account information through the App settings."
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="b. Opt-Out:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:text="- You can opt-out of receiving promotional communications by following the instructions in our communications."
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="5. Security:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:text="a. We implement security measures to protect your information from unauthorized access and use."
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="6. Children's Privacy:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:text="a. The App is not intended for children under the age of 13. We do not knowingly collect personal information from children."
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="7. Changes to this Privacy Policy:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:text="a. We may update this Privacy Policy to reflect changes in our practices. We will notify you of significant changes through the App or other means."
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="8. Contact Us:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="wrap_content"
+                        android:text="a. If you have any questions or concerns about this Privacy Policy, please contact us at [jatindarji@gmail.com]."
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/brygada_1918"
+                        android:textColor="@color/black"
+                        android:text="         By using the UpTrend App, you acknowledge that you have read and understood this Privacy Policy."
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp" />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

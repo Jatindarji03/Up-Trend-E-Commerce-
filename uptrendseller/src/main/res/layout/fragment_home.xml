@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/getTheGraph"
+                    android:layout_width="320dp"
+                    android:layout_height="350dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue55"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="75dp">
+
+
+                    <TextView
+                        android:id="@+id/txtTotalSellStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue55"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="75dp">
+
+
+                    <TextView
+                        android:id="@+id/txtTotalSellingIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableStart="@drawable/rupee_vector24"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="170dp"
+                android:backgroundTint="@color/blue55"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_below="@+id/cardView">
+
+
+                    <TextView
+                        android:id="@+id/txtTotalProductSelling"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="296dp"
+                android:backgroundTint="@color/blue55"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_below="@+id/cardView">
+
+
+                    <TextView
+                        android:id="@+id/txtTotalCancelProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="170dp"
+                android:backgroundTint="@color/blue55"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_below="@+id/cardView">
+
+
+                    <TextView
+                        android:id="@+id/txtTotalProductSell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="296dp"
+                android:backgroundTint="@color/blue55"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="75dp"
+                    android:layout_below="@+id/cardView">
+
+
+                    <TextView
+                        android:id="@+id/txtReturnProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/brygada_1918"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="[Daily Product Selling Income in month]"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Total Product Selling [in Year]"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Total Product Selling Income"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Total Product Selling Today"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="192dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Total Product For Sell"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="192dp"
+                android:layout_marginTop="380dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Total Return Product"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="380dp"
+                android:fontFamily="@font/brygada_1918"
+                android:text="Total Cancel Product"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/cardView55"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

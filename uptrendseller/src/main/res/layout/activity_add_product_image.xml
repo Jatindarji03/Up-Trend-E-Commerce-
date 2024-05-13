@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/blue_top"
+            android:orientation="vertical"
+            android:translationX="-1.20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_21sdp"
+                android:fontFamily="@font/chonburi"
+                android:gravity="center"
+                android:text="Add Product Image"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_21ssp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/save_image_txt"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/brygada_1918"
+            android:gravity="center"
+            android:text="Save &amp; Next"
+            android:textColor="#042AFF"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/text_hide"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_73sdp"
+        android:layout_marginTop="@dimen/_300sdp"
+        android:fontFamily="@font/dm_serif_display"
+        android:gravity="center"
+        android:text="Add Image"
+        android:textColor="#08E1FD"
+        android:textSize="@dimen/_26ssp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:orientation="vertical"
+        tools:context=".add_product_image">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectImage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/brygada_1918"
+            android:background="#08E1FD"
+            android:text="Select Image"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shine_btn_image"
+            android:layout_width="22dp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/shine_btn"
+            android:layout_marginLeft="@dimen/_62sdp"
+            android:translationY="-50dp"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

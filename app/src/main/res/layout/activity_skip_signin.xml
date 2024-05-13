@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".skip_signin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_anime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/yeallw_top">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/fire"
+                app:lottie_loop="true" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_96sdp"
+                android:layout_height="@dimen/_96sdp"
+                android:src="@drawable/fire"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_34sdp"/>
+
+            <TextView
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Up Trend"
+                android:fontFamily="@font/miltonian_tattoo"
+                android:textSize="@dimen/_30ssp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_119sdp"
+                android:layout_marginTop="@dimen/_50sdp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:fontFamily="@font/gelasio"
+                android:gravity="center"
+                android:text="@string/signIn"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:fontFamily="@font/gelasio"
+                android:text="@string/Viewyourwishlist"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:layout_marginTop="@dimen/_105sdp"
+                android:fontFamily="@font/gelasio"
+                android:text="@string/find"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:layout_marginTop="@dimen/_130sdp"
+                android:fontFamily="@font/gelasio"
+                android:text="@string/track"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:background="#43C5FF"
+                android:fontFamily="@font/gelasio"
+                android:text="@string/already"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shine_btn1"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/shine_btn" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:background="#43C5FF"
+                android:fontFamily="@font/gelasio"
+                android:text="@string/newAc"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shine_btn2"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/_37sdp"
+                android:background="@drawable/shine_btn"
+                android:layout_marginTop="@dimen/_55sdp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

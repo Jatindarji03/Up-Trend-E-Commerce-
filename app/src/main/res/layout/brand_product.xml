@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutContainerBrand"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_255sdp"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/productCardView"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_238sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/productImageCategory"
+                    android:layout_width="144dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+
+                <TextView
+                    android:id="@+id/txtBrandNameBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/dm_serif_display"
+                    android:text="Brand name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <TextView
+                    android:id="@+id/txtProductNameBrand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/brygada_1918"
+                    android:text="Product name"
+                    android:textColor="#877D7D"
+                    android:textSize="@dimen/_13ssp"
+                    android:translationY="-5dp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:id="@+id/txt_product_selling_price_Brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/rupee_vector24"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="5999"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                    <TextView
+                        android:id="@+id/text_product_original_price_Brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/columan_vector"
+                        android:drawableStart="@drawable/rupee_silver_vector2"
+                        android:fontFamily="@font/brygada_1918"
+                        android:text="6999"
+                        android:textColor="#736F6F"
+                        android:textSize="@dimen/_13ssp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/rating_shape3"
+                    android:backgroundTint="#414CAF50"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtDiscountBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="25"
+                        android:textColor="#08AC0F"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/percentage_vector"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <TextView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dm_serif_display"
+                        android:text="OFF"
+                        android:textColor="#08AC0F"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
